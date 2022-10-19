@@ -1,0 +1,5 @@
+FROM alpine:latest
+
+RUN mkdir -p /certs/ && ls /certs/ && \
+    apk update && \
+    apk add --no-cache openssl 
